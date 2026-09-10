@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal | Maria Heloisa Vieira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span class="logo"></span>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#contato" class="nav-cta">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <h1>Maria Heloisa Vieira</h1>
+                <p class="cargo">
+                    <span id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
+                </p>
+                <p class="hero-desc">
+                    21 anos, apaixonada por transformar ideias em interfaces limpas, acessíveis
+                    e funcionais. Aqui você encontra meus projetos, habilidades e formas de contato.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary">
+                        <i class="fa-solid fa-code"></i>Ver projetos</a>
+
+                    <a href="#contato" class="btn btn-outline">
+                        <i class="fa-solid fa-paper-plane"></i> Falar comigo
+                    </a>
+                </div>
+                <p class="eyebrow-code"></p>
+            </div>
+
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="lolo.png" alt="Foto de Heloisa" width="220" height="220">
+                </div>
+            </div>
+        </section>
+
+        <a href="#sobre" class="scroll-cue" aria-label="Rolar para a seção Sobre mim">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <section id="sobre">
+            <p class="section-tag">01 · sobre mim</p>
+            <div class="sobre-conteudo">
+                <img class="sobre-img" src="lolo.png" alt="Foto de Heloisa" width="150" height="150">
+                <div class="texto-sobre">
+                    <p>
+                        Eu sou Heloisa Vieira, desenvolvedora front-end apaixonada por tecnologia
+                        e design. Gosto de entender o problema antes de sair escrevendo código, e
+                        de cuidar dos detalhes que fazem uma interface parecer profissional.
+                    </p>
+                    <button id="btn-ver-mais" class="btn btn-outline" aria-expanded="false">
+                        <span>Ver mais</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="conteudo-extra"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <p class="section-tag">02 · projetos</p>
+            <h2>O que eu já construí</h2>
+
+            <div class="lista-projetos">
+                <article class="projeto">
+                    <div class="projeto-icone"><i class="fa-solid fa-globe"></i></div>
+                    <div class="projeto-info">
+                        <h3>Site institucional simples</h3>
+                        <p>Site de página única, HTML e CSS puros, focado em performance.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-icone"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="projeto-info">
+                        <h3>Landing page</h3>
+                        <p>Página de conversão com seções de destaque e chamada para ação.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-icone"><i class="fa-solid fa-id-card"></i></div>
+                    <div class="projeto-info">
+                        <h3>Portfólio pessoal</h3>
+                        <p>Este site: um portfólio construído do zero para reunir meu trabalho.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-icone"><i class="fa-solid fa-file-lines"></i></div>
+                    <div class="projeto-info">
+                        <h3>Currículo online</h3>
+                        <p>Versão web de currículo, pensada para leitura rápida em qualquer tela.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-icone"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="projeto-info">
+                        <h3>Site interativo</h3>
+                        <p>Experiência com interações via JavaScript e conteúdo dinâmico.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <p class="section-tag">03 · habilidades</p>
+            <h2>Com o que eu trabalho</h2>
+
+            <div class="lista-habilidades">
+                <div class="habilidade">
+                    <div class="habilidade-cabecalho">
+                        <i class="fa-brands fa-html5" style="color:#E34F26"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="barra"><div class="barra-preenchida" style="width:90%"></div></div>
+                </div>
+
+                <div class="habilidade">
+                    <div class="habilidade-cabecalho">
+                        <i class="fa-brands fa-css3-alt" style="color:#1572B6"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="barra"><div class="barra-preenchida" style="width:85%"></div></div>
+                </div>
+
+                <div class="habilidade">
+                    <div class="habilidade-cabecalho">
+                        <i class="fa-brands fa-square-js" style="color:#F7DF1E"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="barra"><div class="barra-preenchida" style="width:70%"></div></div>
+                </div>
+
+                <div class="habilidade">
+                    <div class="habilidade-cabecalho">
+                        <i class="fa-brands fa-git-alt" style="color:#F05032"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="barra"><div class="barra-preenchida" style="width:60%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <p class="section-tag">04 · contato</p>
+            <h2>Entre em contato</h2>
+            <p class="contato-intro">
+                Você pode falar comigo pelas redes sociais ou pelo formulário abaixo.
+            </p>
+
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como posso te chamar?" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre o que você precisa"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar mensagem
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Maria Heloisa Vieira</p>
+        <div class="footer-socials">
+            <a href="mailto:Heloisavssouza1@gmail.com" aria-label="Enviar e-mail">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/mheloisa1" aria-label="Perfil no GitHub" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maria-heloisa-5546b7261/" aria-label="Perfil no LinkedIn" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
